@@ -1,0 +1,328 @@
+body {
+  color: #aaabac;
+  background-color: #28282b;
+  font-family: 'NTR', sans-serif;
+  letter-spacing: 2px; }
+
+img {
+  max-width: 100%; }
+
+a:hover {
+  color: white;
+  font-weight: bold; }
+
+.cover {
+  background-size: cover;
+  height: 100%;
+  min-height: 26rem;
+  position: relative; }
+  .cover .wrapper {
+    height: 100%;
+    position: absolute;
+    width: 100%; }
+    .cover .wrapper.video-wrapper {
+      overflow: hidden; }
+      .cover .wrapper.video-wrapper video {
+        height: auto;
+        min-height: 100%;
+        min-width: 100%;
+        width: auto; }
+    .cover .wrapper.hero-wrapper {
+      display: table; }
+      .cover .wrapper.hero-wrapper .hero {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle; }
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1; }
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in; }
+
+header {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  background: #101010;
+  z-index: 99;
+  transform: translateZ(0);
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+  header ul {
+    margin: 0 auto;
+    text-align: center; }
+    header ul li {
+      padding: 2rem;
+      margin: 0 2rem;
+      display: inline-block;
+      text-align: center; }
+      header ul li a {
+        text-decoration: none;
+        color: #A29061; }
+        header ul li a.active {
+          font-weight: bold; }
+
+@keyframes glitch {
+  0% {
+    clip: rect(186px, 9999px, 270px, 4px); }
+  2.5% {
+    clip: rect(158px, 9999px, 49px, 3px); }
+  5% {
+    clip: rect(298px, 9999px, 139px, 4px); }
+  7.5% {
+    clip: rect(96px, 9999px, 266px, 6px); }
+  10% {
+    clip: rect(286px, 9999px, 277px, 5px); }
+  12.5% {
+    clip: rect(217px, 9999px, 263px, 5px); }
+  15% {
+    clip: rect(39px, 9999px, 153px, 3px); }
+  17.5% {
+    clip: rect(249px, 9999px, 268px, 6px); }
+  20% {
+    clip: rect(154px, 9999px, 252px, 3px); }
+  22.5% {
+    clip: rect(220px, 9999px, 135px, 5px); }
+  25% {
+    clip: rect(117px, 9999px, 296px, 5px); }
+  27.5% {
+    clip: rect(175px, 9999px, 184px, 3px); }
+  30% {
+    clip: rect(161px, 9999px, 289px, 3px); }
+  32.5% {
+    clip: rect(222px, 9999px, 240px, 4px); }
+  35% {
+    clip: rect(33px, 9999px, 278px, 4px); }
+  37.5% {
+    clip: rect(107px, 9999px, 39px, 3px); }
+  40% {
+    clip: rect(70px, 9999px, 239px, 4px); }
+  42.5% {
+    clip: rect(201px, 9999px, 240px, 4px); }
+  45% {
+    clip: rect(4px, 9999px, 70px, 5px); }
+  47.5% {
+    clip: rect(77px, 9999px, 262px, 4px); }
+  50% {
+    clip: rect(79px, 9999px, 121px, 3px); }
+  52.5% {
+    clip: rect(202px, 9999px, 36px, 5px); }
+  55% {
+    clip: rect(296px, 9999px, 262px, 4px); }
+  57.5% {
+    clip: rect(292px, 9999px, 53px, 4px); }
+  60% {
+    clip: rect(64px, 9999px, 216px, 4px); }
+  62.5% {
+    clip: rect(3px, 9999px, 92px, 6px); }
+  65% {
+    clip: rect(77px, 9999px, 251px, 4px); }
+  67.5% {
+    clip: rect(54px, 9999px, 121px, 6px); }
+  70% {
+    clip: rect(123px, 9999px, 14px, 4px); }
+  72.5% {
+    clip: rect(260px, 9999px, 62px, 3px); }
+  75% {
+    clip: rect(86px, 9999px, 4px, 6px); }
+  77.5% {
+    clip: rect(10px, 9999px, 9px, 6px); }
+  80% {
+    clip: rect(151px, 9999px, 83px, 3px); }
+  82.5% {
+    clip: rect(219px, 9999px, 60px, 3px); }
+  85% {
+    clip: rect(42px, 9999px, 32px, 5px); }
+  87.5% {
+    clip: rect(195px, 9999px, 132px, 4px); }
+  90% {
+    clip: rect(116px, 9999px, 28px, 5px); }
+  92.5% {
+    clip: rect(278px, 9999px, 39px, 3px); }
+  95% {
+    clip: rect(13px, 9999px, 262px, 3px); }
+  97.5% {
+    clip: rect(62px, 9999px, 268px, 5px); }
+  100% {
+    clip: rect(167px, 9999px, 36px, 5px); } }
+
+.videoHolder {
+  height: 48rem;
+  overflow: hidden;
+  margin-top: -2rem; }
+
+#background-video {
+  overflow: hidden;
+  width: 100%;
+  float: left;
+  top: 0;
+  padding: none;
+  position: relative;
+  transform: translate(0px, -10%); }
+
+.columns {
+  padding: 2rem; }
+
+.columns:nth-child(3) {
+  margin-left: 0; }
+
+.bg {
+  position: relative;
+  background: #1d1e1f; }
+
+.container {
+  padding-top: 8rem; }
+
+hr {
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+  border-width: 0;
+  border-top: 1px solid #2e2e2e; }
+
+#intro {
+  text-align: center; }
+  #intro span {
+    position: relative;
+    color: #aaabac;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 11px; }
+    #intro span:before, #intro span:after {
+      content: attr(data-content);
+      position: absolute;
+      z-index: -1;
+      color: #fff;
+      overflow: hidden;
+      clip: rect(150px, 159px, 150px, 0); }
+    #intro span:before {
+      left: -2px;
+      top: 4px;
+      animation: glitch 5s infinite linear alternate-reverse;
+      text-shadow: -1px 0 #f00; }
+    #intro span:after {
+      left: 2px;
+      top: -2px;
+      animation: glitch 4s infinite linear alternate-reverse;
+      text-shadow: -1px 0 #00f; }
+
+#bio {
+  margin-top: 8rem; }
+  #bio p {
+    text-align: center; }
+
+#music {
+  margin-top: 8rem; }
+  #music .embedHolder {
+    overflow: hidden;
+    height: 135px;
+    margin-bottom: 8rem;
+    box-shadow: 0 3rem 10rem -2rem rgba(0, 0, 0, 0.5); }
+    #music .embedHolder iframe {
+      margin-top: -5px; }
+
+.album {
+  margin-bottom: 4rem;
+  text-align: center; }
+
+.album span {
+  color: #A29061;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  display: block; }
+
+.album p {
+  margin-bottom: 1.5rem; }
+
+.album a.listen {
+  color: #7d7e7f;
+  text-decoration: none; }
+
+.album a.listen:hover {
+  color: white;
+  font-weight: bold; }
+
+.album img {
+  width: 100%; }
+
+.gram {
+  text-align: center;
+  margin-bottom: 6rem; }
+
+.gram img {
+  border-radius: 5px;
+  box-shadow: 0 3rem 10rem -2rem rgba(0, 0, 0, 0.5);
+  max-height: 52rem;
+  margin-bottom: 2rem; }
+
+.tw-feed {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  display: block; }
+
+.tw-feed a {
+  color: #fff;
+  text-decoration: none; }
+
+.tw-feed a:hover {
+  color: #ccc;
+  text-decoration: none; }
+
+.twitter-timeline {
+  position: relative; }
+
+#twitter-widget-0 .timeline-Widget {
+  background-color: transparent; }
+
+footer {
+  margin-top: 4rem;
+  padding: 4rem 0;
+  border-top: 1px solid #333;
+  background: #1e1e1e; }
+
+footer .container {
+  padding-top: 0; }
+
+footer a {
+  text-align: center;
+  margin: 0;
+  color: #444; }
+
+#social {
+  text-align: center; }
+
+#social i {
+  margin: 0 1.5rem; }
+
+.player__control__icon {
+  display: inline-block; }
+
+.player__progress__bar {
+  background: #555;
+  height: 10px;
+  width: 100%;
+  display: block; }
+
+.player__progress__bar--percent.player__progress__bar--progress {
+  background: #333;
+  height: 10px;
+  width: 100%;
+  display: block;
+  position: absolute; }
+
+.player__progress__bar--percent {
+  background: white;
+  height: 10px;
+  width: 1px; }
+
+@media only screen and (max-width: 640px) {
+  header ul li {
+    margin: 0 .5rem; } }
